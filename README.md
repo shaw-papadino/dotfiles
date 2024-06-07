@@ -4,4 +4,6 @@
 
 ターミナル起動 & スクリプト実行
 
-tbd
+```bash
+bash -c "$( curl -fsSL https://raw.github.com/shaw-papadino/dotfiles/main/setup.sh )"
+```
