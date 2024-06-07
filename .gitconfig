@@ -6,3 +6,5 @@
 	email = sho.edu.human@gmail.com
 [color]
     ui = auto
+[credential]
+	helper = osxkeychain
