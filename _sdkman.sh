@@ -1,15 +1,15 @@
 #!/bin/sh
 
-# Kotlinのインストール
-sdk install kotlin
-
-# Scalaのインストール
-sdk install scala
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Javaのインストール
 sdk install java 17.0.2-open
-
-# 使用するバージョンの設定
-sdk use kotlin latest
-sdk use scala latest
 sdk use java 17.0.2-open
+
+# Kotlinのインストール
+sdk install kotlin
+sdk use kotlin latest
+
+# Scalaのインストール
+sdk install scala
+sdk use scala latest

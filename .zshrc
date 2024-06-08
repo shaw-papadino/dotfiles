@@ -32,15 +32,8 @@ alias glo="gl --oneline"
 alias gs="g status"
 alias gpl="g pull"
 
-
-export PATH="/Users/oka/.deta/bin:$PATH"
-
 . /usr/local/opt/asdf/libexec/asdf.sh
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/oka/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/oka/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/oka/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/oka/google-cloud-sdk/completion.zsh.inc'; fi
-
-export PATH=$PATH:$(go env GOPATH)/bin
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
