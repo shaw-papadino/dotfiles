@@ -13,8 +13,8 @@ alias ..2="cd ../../"
 alias ..3="cd ../../../"
 alias m="mkdir"
 alias pwdc="pwd |tr -d '\n'|pbcopy"
-alias et="exa -T"
-alias el="exa -l"
+alias et="eza -T"
+alias el="eza -l"
 alias c="pbcopy"
 
 # git
