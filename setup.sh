@@ -31,6 +31,13 @@ brew cleanup
 # プログラミング言語
 #----------------------------------------
 echo "プログラミング言語をインストールします..."
+
+if ! type sdk > /dev/null 2>&1; then
+    echo "SDKMANをインストールします..."
+    curl -s "https://get.sdkman.io" | bash
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi
+./_sdkman.sh
 ./_asdf.sh
 
 #----------------------------------------

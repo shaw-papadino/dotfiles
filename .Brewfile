@@ -11,7 +11,8 @@ cask "visual-studio-code"
 cask "intellij-idea-ce"
 cask "github"
 cask "1password"
-
+cask "superlist"
+cask "obsidian"
 
 
 # CLIツールの管理
