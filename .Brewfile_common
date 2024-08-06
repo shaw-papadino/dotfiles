@@ -10,6 +10,7 @@ cask "visual-studio-code"
 cask "intellij-idea-ce"
 cask "github"
 cask "deepl"
+cask "rectangle"
 
 # CLIツールの管理
 brew "asdf"
