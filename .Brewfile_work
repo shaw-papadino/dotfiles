@@ -1,0 +1,6 @@
+# アプリ系のインストール先の指定
+cask_args appdir: "/Applications"
+
+# デスクトップアプリケーションの管理
+cask "postman"
+cask "dbeaver-community"
