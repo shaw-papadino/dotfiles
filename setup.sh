@@ -13,19 +13,19 @@ if ! type brew > /dev/null 2>&1; then
 fi
 
 echo "brew docterを実行します..."
-# brew doctor
+brew doctor
 
 echo "brew updateを実行します..."
-# brew update
+brew update
 
 echo "brew upgradeを実行します..."
-# brew upgrade
+brew upgrade
 
 echo ".Brewfileで管理しているパッケージをインストールします..."
-# brew bundle --file=./.Brewfile
+brew bundle --file=./.Brewfile
 
 echo "brew cleanupを実行します..."
-# brew cleanup
+brew cleanup
 
 #----------------------------------------
 # プログラミング言語
