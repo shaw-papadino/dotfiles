@@ -1,0 +1,68 @@
+" 基本設定
+set number
+set cursorline
+set smartindent
+set nowrap
+syntax on
+
+" Leader キーをスペースに設定
+let mapleader=" "
+
+nnoremap <Leader>ev :<C-u>vsplit ~/.ideavimrc<CR>
+nnoremap <Leader>sv :<C-u>source ~/.ideavimrc<CR>
+
+" 検索ハイライト設定
+set hlsearch
+set incsearch
+nnoremap <Esc><Esc> :nohlsearch<CR>
+
+" 行頭・行末移動
+nnoremap H ^
+nnoremap L $
+
+" バッファ/タブ間の移動
+nnoremap [b :prev<CR>
+nnoremap ]b :next<CR>
+
+" ウィンドウ移動
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" タブ操作
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>w :tabclose<CR>
+nnoremap <Leader>] :tabnext<CR>
+nnoremap <Leader>[ :tabprevious<CR>
+
+" ファイル操作
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
+" ウィンドウ分割
+nnoremap <Leader>v :vsplit<CR>
+nnoremap <Leader>s :split<CR>
+
+" ESCの代替
+inoremap jj <Esc>
+
+" クリップボード連携
+set clipboard+=unnamed
+
+" IdeaVim固有の設定
+set ideajoin
+set ideavimsupport+=dialog
+
+" NERDTree相当の機能をIntelliJのプロジェクトビューに割り当て
+nnoremap <Leader>n :action ActivateProjectToolWindow<CR>
+
+nmap gi <Action>(GotoImplementation)
+
+nmap [c <Action>(VcsShowPrevChangeMarker)
+nmap ]c <Action>(VcsShowNextChangeMarker)
+
+nmap [q <Action>(GotoPreviousError)
+nmap ]q <Action>(GotoNextError)
+
+nmap <Leader>k <Action>(ShowHoverInfo)
